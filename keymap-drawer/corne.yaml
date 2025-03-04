@@ -1,156 +1,33 @@
 layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
-  Base:
+  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LCTRL, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, ESC, LGUI, lower, SPACE, RET,
+    raise, RALT]
+  lower:
   - TAB
-  - Q
-  - W
-  - F
-  - P
-  - G
-  - J
-  - L
-  - U
-  - Y
-  - ;
-  - \
-  - Raise
-  - A
-  - R
-  - S
-  - T
-  - D
-  - H
-  - N
-  - E
-  - I
-  - O
-  - ''''
-  - LSHIFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - K
-  - M
-  - ','
-  - .
-  - /
-  - {t: RET, h: RSHFT}
-  - LALT
-  - LGUI
-  - Lower
-  - SPACE
-  - LCTRL
-  - Raise
-  Lower:
-  - '~'
-  - '%'
-  - '&'
-  - '?'
-  - +
-  - '@'
-  - $
-  - _
-  - '['
-  - ']'
-  - '!'
-  - '#'
-  - '`'
-  - /
-  - (
-  - '='
-  - '0'
-  - '{'
-  - '}'
   - '1'
-  - '*'
-  - )
-  - '-'
-  - ^
-  - '&studio_unlock'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '|'
-  - \
   - '2'
   - '3'
   - '4'
   - '5'
-  - {t: ▽, type: trans}
-  - PREV
-  - NEXT
-  - {type: held}
-  - MUTE
-  - VOLUME UP
-  - VOL DN
-  Raise:
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - Ctl+PG UP
-  - Ctl+PG DN
-  - {t: ▽, type: trans}
-  - PG UP
-  - Ctl+LEFT ARROW
-  - UP
-  - Ctl+RIGHT ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - LALT
-  - GUI
-  - LSHFT
-  - LCTRL
-  - ESC
-  - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - BSPC
-  - DEL
-  - {t: ▽, type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BACKSPACE
-  - DELETE
-  - RETURN
-  - RET
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  adjust:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: EP TOG, type: held}
-  - EP OFF
-  - EP TOG
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PREV
-  - NEXT
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -162,56 +39,52 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: Base, h: toggle}
-  - {t: ▽, type: trans}
-  - LEFT ALT
+  - LGUI
   - {type: held}
+  - SPACE
+  - RET
   - {t: ▽, type: trans}
-  - RIGHT WIN
-  - {t: ▽, type: trans}
-  Game ++:
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - Ctl+AltGr+Y
-  - Ctl+AltGr+U
-  - Ctl+AltGr+I
-  - Ctl+AltGr+H
-  - Ctl+AltGr+J
-  - Ctl+AltGr+DEL
-  - {t: adjust, h: toggle}
-  - L
-  - O
-  - Y
-  - K
-  - G
-  - F5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Alt+F4
-  - F10
-  - ''
-  - {t: Base, h: toggle}
-  - ''
-  - '6'
-  - '7'
+  - RALT
+  raise:
+  - TAB
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - BSPC
+  - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Base, h: toggle}
-  - J
-  - I
-  - M
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '`'
+  - LSHFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - '~'
+  - LGUI
+  - {t: ▽, type: trans}
+  - SPACE
+  - RET
+  - {type: held}
+  - RALT
