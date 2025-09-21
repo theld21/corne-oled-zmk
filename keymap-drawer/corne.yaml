@@ -88,3 +88,6 @@ layers:
   - RET
   - {type: held}
   - RALT
+combos:
+- p: [37, 38]
+  k: BACKSPACE
